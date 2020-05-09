@@ -17,6 +17,7 @@
 6. 拷贝out/Debug/lib.java/sdk/android/libwebrtc.jar到leb-android-sdk/lebwebrtcsdk/src/libs文件夹下 
 
 ### IOS 编译
+
 1. 安装depot_tools并配置环境变量 类似android
    fetch --nohooks webrtc_ios
    gclient sync -r bf053b6f3c7364c8e615b1f678339700be209cf7 --force
