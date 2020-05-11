@@ -9,12 +9,10 @@
    git fetch twebrtc  
    git checkout twebrtc/master  
 2. 生成编译文件夹  
-   gn gen out/Debug --args='target_os="android" target_cpu="arm"'  
-3. 替换编译配置文件  
-   cp args/android_arm.gn out/Debug/args.gn 或 cp args/android_arm64.gn out/Debug/args.gn  
-4. 编译  
+   gn gen out/Debug --args="`cat args/android_arm64.gn`"  或 gn gen out/Debug --args="`cat args/android_arm.gn`"  
+3. 编译  
    ninja -C out/Debug  
-5. 拷贝out/Debug/libjingle_peerconnection_so.so到[TWebRTC-Android-SDK](https://github.com/tencentyun/TWebRTC-Android-SDK)/twebrtcsdk/libs/arm64-v8a 或 armeabi-v7a文件夹下, 进行aar编译和publish到jcenter  
+4. 拷贝out/Debug/libjingle_peerconnection_so.so到[TWebRTC-Android-SDK](https://github.com/tencentyun/TWebRTC-Android-SDK)/twebrtcsdk/libs/arm64-v8a 或 armeabi-v7a文件夹下, 进行aar编译和publish到jcenter  
 
 ### IOS 编译  
   
