@@ -1,11 +1,11 @@
-## TWebRTC, 腾讯云删减版WebRTC
+## TCWebRTC, 腾讯云删减版WebRTC
 
 ### Android编译
 
 1. 根据https://webrtc.googlesource.com/src/+/refs/heads/master/docs/native-code/android/index.md准备好编译环境, 并将src切换至本项目  
    fetch --nohooks webrtc_android   
    gclient sync -r bf053b6f3c7364c8e615b1f678339700be209cf7 --force  
-   git remote add twebrtc https://github.com/tencentyun/TWebRTC.git  
+   git remote add twebrtc https://github.com/tencentyun/TCWebRTC.git  
    git fetch twebrtc  
    git checkout twebrtc/master  
 2. 生成编译文件夹  
@@ -19,7 +19,7 @@
 1. 安装depot_tools并配置环境变量 类似android  
    fetch --nohooks webrtc_ios  
    gclient sync -r bf053b6f3c7364c8e615b1f678339700be209cf7 --force  
-   git remote add twebrtc https://github.com/tencentyun/TWebRTC.git  
+   git remote add twebrtc https://github.com/tencentyun/TCWebRTC.git  
    git fetch twebrtc  
    git checkout twebrtc/master  
      
